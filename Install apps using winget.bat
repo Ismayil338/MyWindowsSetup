@@ -1,1 +1,0 @@
-powershell -command "winget install 7zip Audacious ExplorerPatcher Git.Git TheDocumentFoundation.LibreOffice Localsend Notepad++ Sumatrapdf Supermium Telegram.TelegramDesktop Transmission.Transmission Virtualbox Vscodium Whatsapp"
