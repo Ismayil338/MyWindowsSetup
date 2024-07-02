@@ -1,1 +1,1 @@
-winget install 7zip Audacious ExplorerPatcher Git.Git Localsend Notepad++ Sumatrapdf Supermium Telegram.TelegramDesktop Transmission.Transmission Virtualbox Vscodium Whatsapp
+winget install 7zip Audacious ExplorerPatcher Git.Git Localsend Notepad++ Outlook Sumatrapdf Supermium Telegram.TelegramDesktop Transmission.Transmission Vscodium Whatsapp
