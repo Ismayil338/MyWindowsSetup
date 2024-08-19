@@ -78,6 +78,11 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "TaskbarMn"=dword:00000000
 
+; Open Control Panel with Large icons by default
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel]
+"AllItemsIconView"=dword:00000000
+"StartupPage"=dword:00000001
+
 ; Add Control Panel Desktop Icon
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
 "{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}"=dword:00000000
