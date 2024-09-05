@@ -1,1 +1,1 @@
-#MyWindowsSetup
+MyWindowsSetup
