@@ -97,6 +97,10 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\System\GameConfigStore]
 "GameDVR_Enabled"=dword:00000000
 
+; Turn Off Notification Suggestions
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.ActionCenter.SmartOptOut]
+"Enabled"=dword:00000000
+
 ; Turn Off Tailored Experiences
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Privacy]
 "TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
@@ -105,7 +109,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
 "SearchboxTaskbarMode"=dword:00000000
 
-; Disable Show Notifications in Settings app
+; Turn Off Show Notifications in Settings app
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SystemSettings\AccountNotifications]
 "EnableAccountNotifications"=dword:00000000
 
