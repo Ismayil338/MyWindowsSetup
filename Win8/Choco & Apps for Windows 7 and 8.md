@@ -12,3 +12,5 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 choco install -y 7zip Localsend.install Notepadplusplus Sumatrapdf Telegram Transmission-qt
 ```
+
+[Download Supermium](https://win32subsystem.live/supermium/)
