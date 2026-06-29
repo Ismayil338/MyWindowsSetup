@@ -1,3 +1,9 @@
+## Prereq: Disable UAC for administrators
+Open cmd as admin, paste:
+```
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v ConsentPromptBehaviorAdmin /t REG_DWORD /d 0 /f
+```
+
 ## Prereq: Install Windows Management Framework 5.1
 * [Download for Windows 8.1 x64](https://download.microsoft.com/download/6/f/5/6f5ff66c-6775-42b0-86c4-47d41f2da187/Win8.1AndW2K12R2-KB3191564-x64.msu)
 * [Download for Windows 7 x64](https://download.microsoft.com/download/6/f/5/6f5ff66c-6775-42b0-86c4-47d41f2da187/Win7AndW2K8R2-KB3191566-x64.zip)
