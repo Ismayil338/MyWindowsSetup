@@ -14,10 +14,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ## Install Apps (pwsh admin)
 ```
-choco install -y 7zip Localsend.install Notepadplusplus Sumatrapdf Telegram Transmission
-```
-```
-choco install -y Git /NoShellIntegration
+choco install -y 7zip localsend.install notepadplusplus sumatrapdf telegram transmission git --package-parameters="'/NoShellIntegration'"
 ```
 
 ## Download Supermium
