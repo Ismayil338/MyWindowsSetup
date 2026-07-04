@@ -16,8 +16,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 choco install -y 7zip Localsend.install Notepadplusplus Sumatrapdf Telegram Transmission
 ```
-
-### Install Git
 ```
 choco install -y Git /NoShellIntegration
 ```
