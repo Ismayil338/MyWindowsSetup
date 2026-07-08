@@ -7,6 +7,9 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" /v ShellState 
 :: Turn On Use Check Boxes to Select Items
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v AutoCheckSelect /t REG_DWORD /d 1 /f
 
+:: Replace Command Prompt with Powershell in Win + X menu
+reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v DontUsePowerShellOnWinX /t REG_DWORD /d 0 /f
+
 :: Open Control Panel with Large icons by default
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel" /v AllItemsIconView /t REG_DWORD /d 0 /f
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel" /v StartupPage /t REG_DWORD /d 1 /f
