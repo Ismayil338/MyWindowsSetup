@@ -14,43 +14,37 @@ USB\VID_8087&PID_0AAA&REV_0002
 PCI\VEN_8086&DEV_3EA0&SUBSYS_128D1025
 ```
 
-## Intel WLAN
+## Intel WLAN, Netwtw08
 ```
 PCI\VEN_8086&DEV_9DF0&SUBSYS_00348086
 ```
-Netwtw08
 
-## Realtek Cardreader
+## Realtek Cardreader, RtsPer
 ```
 PCI\VEN_10EC&DEV_5287&SUBSYS_128D1025 1803
 ```
-RtsPer
 
 ## Intel System Driver Update (2552.9.3.0)
 ```
 PCI\VEN_8086&DEV_9DE0 1809
 ```
 
-## INTEL - System - 10.1.15.7
+## INTEL - System - 10.1.15.7, CannonLake-LPSystemThermal
 ```
 PCI\VEN_8086&DEV_9DF9
 ```
-CannonLake-LPSystemThermal
 
-## INTEL - System - 7/18/1968 12:00:00 AM - 10.1.15.5
+## INTEL - System - 7/18/1968 12:00:00 AM - 10.1.15.5, CannonLake-LPSystem
 ```
 PCI\VEN_8086&DEV_9DA4 1809
 ```
-CannonLake-LPSystem
 
-## INTEL - System - 7/18/1968 12:00:00 AM - 10.1.15.5
+## INTEL - System - 7/18/1968 12:00:00 AM - 10.1.15.5, CannonLake-LPSystem
 ```
 PCI\VEN_8086&DEV_9DA3 1809
 ```
-CannonLake-LPSystem
 
-## INTEL - System - 12/18/2018 12:00:00 AM - 10.1.7.3 (1/1/1970)
+## INTEL - System - 12/18/2018 12:00:00 AM - 10.1.7.3 (1/1/1970), SkylakeSystemGMM
 ```
 PCI\VEN_8086&DEV_1911
 ```
-SkylakeSystemGMM
