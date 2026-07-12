@@ -29,7 +29,7 @@ PCI\VEN_10EC&DEV_5287&SUBSYS_128D1025 1803
 PCI\VEN_8086&DEV_9DE0 1809
 ```
 
-## INTEL - System - 10.1.15.7
+## INTEL - System - 10.1.15.7 (CannonLake-LPSystemThermal)
 ```
 PCI\VEN_8086&DEV_9DF9
 ```
