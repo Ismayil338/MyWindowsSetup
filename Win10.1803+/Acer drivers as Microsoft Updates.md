@@ -15,9 +15,11 @@ PCI\VEN_8086&DEV_3EA0&SUBSYS_128D1025
 ```
 
 ## Intel WLAN
-### Netwtw08
 ```
 PCI\VEN_8086&DEV_9DF0&SUBSYS_00348086
+```
+```
+Netwtw08
 ```
 
 ## Realtek Cardreader
