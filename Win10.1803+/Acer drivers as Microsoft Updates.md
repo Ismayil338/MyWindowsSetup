@@ -14,12 +14,14 @@ USB\VID_8087&PID_0AAA&REV_0002
 PCI\VEN_8086&DEV_3EA0&SUBSYS_128D1025
 ```
 
-## Intel WLAN (Netwtw08)
+## Intel WLAN
+### Netwtw08
 ```
 PCI\VEN_8086&DEV_9DF0&SUBSYS_00348086
 ```
 
-## Realtek Cardreader (RtsPer)
+## Realtek Cardreader
+### RtsPer
 ```
 PCI\VEN_10EC&DEV_5287&SUBSYS_128D1025 1803
 ```
