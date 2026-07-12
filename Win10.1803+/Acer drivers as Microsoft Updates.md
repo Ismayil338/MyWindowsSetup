@@ -47,6 +47,7 @@ CannonLake-LPSystem
 ```
 PCI\VEN_8086&DEV_9DA3 1809
 ```
+CannonLake-LPSystem
 
 ## INTEL - System - 12/18/2018 12:00:00 AM - 10.1.7.3 (1/1/1970)
 ```
