@@ -1,4 +1,4 @@
-## Acer drivers as Microsoft Updates
+## Acer Drivers from Microsoft Update Catalog
 ## Acer Airplane Mode
 ```
 ACPI\VEN_1025&DEV_1229 1809
