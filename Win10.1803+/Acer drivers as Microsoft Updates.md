@@ -53,3 +53,4 @@ CannonLake-LPSystem
 ```
 PCI\VEN_8086&DEV_1911
 ```
+SkylakeSystemGMM
