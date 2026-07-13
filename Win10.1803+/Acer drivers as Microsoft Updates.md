@@ -1,4 +1,4 @@
-## Acer Drivers from Microsoft Update Catalog
+# Acer Drivers from Microsoft Update Catalog
 ## Acer Airplane Mode
 ```
 ACPI\VEN_1025&DEV_1229 1809
@@ -47,4 +47,15 @@ PCI\VEN_8086&DEV_9DA3 1809
 ## INTEL - System - 12/18/2018 12:00:00 AM - 10.1.7.3 (1/1/1970), SkylakeSystemGMM
 ```
 PCI\VEN_8086&DEV_1911
+```
+
+# Drivers for Legacy Systems
+## Intel Display Graphics for Windows 7/8
+```
+https://retrosystemsrevival.blogspot.com/2024/04/intel-hd-620630-x64-graphics-win7881.html
+```
+
+## Intel WLAN for Windows 7
+```
+https://x.com/TheBobPony/status/2066922803945717875
 ```
