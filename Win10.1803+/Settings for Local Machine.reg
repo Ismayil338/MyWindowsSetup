@@ -27,7 +27,6 @@
 ; Change User Account Control (UAC) Settings to Never notify me
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "PromptOnSecureDesktop"=dword:00000000
-"EnableLUA"=dword:00000001
 "ConsentPromptBehaviorAdmin"=dword:00000000
 
 ; Disable Add New Microsoft Accounts
