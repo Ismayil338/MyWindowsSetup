@@ -1,0 +1,28 @@
+﻿Windows Registry Editor Version 5.00
+
+; Add Desktop folder to Navigation Pane
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+"System.IsPinnedToNameSpaceTree"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\ShellFolder]
+"SortOrderIndex"=dword:00000000
+
+; Add Documents folder to Navigation Pane
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{d3162b92-9365-467a-956b-92703aca08af}]
+"System.IsPinnedToNameSpaceTree"=dword:00000001
+
+; Add Downloads folder to Navigation Pane
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{088e3905-0323-4b02-9826-5d99428e115f}]
+"System.IsPinnedToNameSpaceTree"=dword:00000001
+
+; Add Music folder to Navigation Pane
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
+"System.IsPinnedToNameSpaceTree"=dword:00000001
+
+; Add Pictures folder to Navigation Pane
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
+"System.IsPinnedToNameSpaceTree"=dword:00000001
+
+; Add Videos folder to Navigation Pane
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+"System.IsPinnedToNameSpaceTree"=dword:00000001
