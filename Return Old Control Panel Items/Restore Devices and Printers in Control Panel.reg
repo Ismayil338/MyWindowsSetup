@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{a51c6aa6-020a-40fd-a142-37fe70fea860}]
+@="Devices and Printers "
+"InfoTip"="@%SystemRoot%\\System32\\DeviceCenter.dll,-2000#immutable1"
+"SortOrderIndex"=dword:00000058
+"System.ApplicationName"="Microsoft.DevicesAndPrinters"
+"System.ControlPanel.Category"=dword:00000002
+"System.Software.TasksFileUrl"="C:\\tasklist.xml"
+
+[HKEY_CLASSES_ROOT\CLSID\{a51c6aa6-020a-40fd-a142-37fe70fea860}\DefaultIcon]
+@="%SystemRoot%\\System32\\DeviceCenter.dll,-1"
+
+[HKEY_CLASSES_ROOT\CLSID\{a51c6aa6-020a-40fd-a142-37fe70fea860}\Shell\Open\command]
+ @="explorer shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{a51c6aa6-020a-40fd-a142-37fe70fea860}]
+@="Device Center"

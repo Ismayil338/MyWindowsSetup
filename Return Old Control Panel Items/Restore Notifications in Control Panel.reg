@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{8612a23f-e5de-4184-885b-5ec964aa4721}]
+@="Notification Area Icons"
+"InfoTip"="@%SystemRoot%\\System32\\taskbarcpl.dll,-2#immutable1"
+"System.ApplicationName"="Microsoft.NotificationAreaIcons"
+"System.ControlPanel.Category"=dword:00000001
+"System.Software.TasksFileUrl"="C:\\tasklist.xml"
+
+[HKEY_CLASSES_ROOT\CLSID\{8612a23f-e5de-4184-885b-5ec964aa4721}\DefaultIcon]
+@="%SystemRoot%\\System32\\taskbarcpl.dll,-1"
+
+[HKEY_CLASSES_ROOT\CLSID\{8612a23f-e5de-4184-885b-5ec964aa4721}\Shell\Open\command]
+ @="explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{8612a23f-e5de-4184-885b-5ec964aa4721}]
+@="Notification Area Icons"
