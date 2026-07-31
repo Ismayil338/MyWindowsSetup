@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{c343705e-4112-46fb-9f75-fa0adff3a1ec}]
+@="Windows Tools "
+"InfoTip"="@%SystemRoot%\\system32\\shell32.dll,-22921"
+"System.ApplicationName"="Microsoft.AdministrativeTools"
+"System.ControlPanel.Category"=dword:00000005
+"System.Software.TasksFileUrl"="C:\\tasklist.xml"
+
+[HKEY_CLASSES_ROOT\CLSID\{c343705e-4112-46fb-9f75-fa0adff3a1ec}\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,-114"
+
+[HKEY_CLASSES_ROOT\CLSID\{c343705e-4112-46fb-9f75-fa0adff3a1ec}\Shell\Open\command]
+ @="explorer shell:::{D20EA4E1-3957-11d2-A40B-0C5020524153}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{c343705e-4112-46fb-9f75-fa0adff3a1ec}]
+@="Windows Tools"
