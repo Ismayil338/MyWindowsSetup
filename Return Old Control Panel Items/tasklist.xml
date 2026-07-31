@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications xmlns="http://schemas.microsoft.com/windows/cpltasks/v1" xmlns:sh="http://schemas.microsoft.com/windows/tasks/v1" xmlns:sh2="http://schemas.microsoft.com/windows/tasks/v2">
+   <!-- Personalization -->
+   <application id="{580722ff-16a7-44c1-bf74-7e1acd00f4f9}">
+      <sh:task id="{565f6260-bbc8-4068-ab61-ad60b4e5498f}">
+         <sh:name>Change the theme</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25084</sh:keywords>
+         <sh:keywords>@shell32.dll,-25194</sh:keywords>
+         <sh:keywords>@shell32.dll,-25085</sh:keywords>
+         <sh:keywords>schemes</sh:keywords>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:keywords>color;colour;display;themes;schemes;visual;windows</sh:keywords>
+         <sh:keywords>themes</sh:keywords>
+         <sh:keywords>@shell32.dll,-25213</sh:keywords>
+         <sh:command>explorer.exe shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}</sh:command>
+      </sh:task>
+      <sh:task id="{706674a4-8446-48b9-a3e8-92d189d573ce}">
+         <sh:name>Change desktop background</sh:name>
+         <sh:keywords>@shell32.dll,-25115</sh:keywords>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25194</sh:keywords>
+         <sh:keywords>@shell32.dll,-25085</sh:keywords>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25181</sh:keywords>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:keywords>paper;wallpaper;wall-paper</sh:keywords>
+         <sh:keywords>@shell32.dll,-25213</sh:keywords>
+         <sh:keywords>slideshow;show</sh:keywords>
+         <sh:command>explorer shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921} -Microsoft.Personalization\pageWallpaper</sh:command>
+      </sh:task>
+      <sh:task id="{117122a0-5baf-4760-808a-75e6327e35a1}">
+         <sh:name>Change window colors</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25084</sh:keywords>
+         <sh:keywords>@shell32.dll,-25194</sh:keywords>
+         <sh:keywords>@shell32.dll,-25069</sh:keywords>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:keywords>color;colour;display;themes;schemes;visual;windows</sh:keywords>
+         <sh:keywords>@shell32.dll,-25213</sh:keywords>
+         <sh:keywords>@shell32.dll,-25274</sh:keywords>
+         <sh:command>explorer shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921} -Microsoft.Personalization\pageColorization</sh:command>
+      </sh:task>
+      <sh:task id="{2b4a4ea6-8957-4554-bc02-441b04701459}">
+         <!-- Change screen saver -->
+         <sh:name>@shell32.dll,-24367</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25194</sh:keywords>
+         <sh:keywords>@shell32.dll,-25080</sh:keywords>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:keywords>paper;wallpaper;wall-paper</sh:keywords>
+         <sh:keywords>@shell32.dll,-25213</sh:keywords>
+         <sh:command>%windir%\system32\rundll32.exe shell32.dll,Control_RunDLL desk.cpl,screensaver,@screensaver</sh:command>
+      </sh:task>
+      <sh:task id="{1ca3239b-c274-4e11-9359-46322355f0d9}">
+         <!-- Change system sounds -->
+         <sh:name>@shell32.dll,-24246</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25097</sh:keywords>
+         <sh:keywords>@shell32.dll,-25387</sh:keywords>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:keywords>@shell32.dll,-25074</sh:keywords>
+         <sh:command>%windir%\System32\rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl,,2</sh:command>
+      </sh:task>
+      <sh:task id="{8c8eedb9-3192-4183-b5c8-3406c9f1cbbf}">
+         <sh:name>Personalize your computer</sh:name>
+         <sh:keywords>@shell32.dll,-25194</sh:keywords>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:keywords>color;colour;display;themes;schemes;visual;windows</sh:keywords>
+         <sh:keywords>themes</sh:keywords>
+         <sh:keywords>@shell32.dll,-25213</sh:keywords>
+         <sh:command>explorer.exe shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}</sh:command>
+      </sh:task>
+      <sh:task id="{2350cfd9-2a5f-41e0-80ec-e2102b342e4a}">
+         <sh:name>Get more themes online</sh:name>
+         <sh:keywords>@shell32.dll,-25080</sh:keywords>
+         <sh:keywords>loads;downloads;dwonload</sh:keywords>
+         <sh:keywords>paper;wallpaper;wall-paper</sh:keywords>
+         <sh:keywords>schemes</sh:keywords>
+         <sh:keywords>@shell32.dll,-25235</sh:keywords>
+         <sh:keywords>color;colour;display;themes;schemes;visual;windows</sh:keywords>
+         <sh:keywords>themes</sh:keywords>
+         <sh:keywords>@shell32.dll,-25213</sh:keywords>
+         <sh:keywords>free</sh:keywords>
+         <sh:command>msedge https://www.microsoft.com/en-us/store/collections/windowsthemes</sh:command>
+      </sh:task>
+      <sh:task id="{13781435-95d4-4168-8b4a-f0d9cd78952a}">
+         <sh:name>Show or hide common icons on the desktop</sh:name>
+         <sh:keywords>@shell32.dll,-25085</sh:keywords>
+         <sh:keywords>icons;symbols</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>my;computer;documents;recycle bin;this pc</sh:keywords>
+         <sh:command>%windir%\system32\rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,0</sh:command>
+      </sh:task>
+      <sh:task id="{0fb994d4-a335-485f-9475-965d3b571ec0}">
+         <!-- Turn screen saver on or off -->
+         <sh:name>@shell32.dll,-24375</sh:name>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25080</sh:keywords>
+         <sh:command>%windir%\system32\rundll32.exe shell32.dll,Control_RunDLL desk.cpl,screensaver,@screensaver</sh:command>
+      </sh:task>
+      <sh:task id="{445ce3a5-245a-4a91-84ee-e61edd062ab9}">
+         <sh:name>Lock the computer when I leave it alone for a period of time</sh:name>
+         <sh:keywords>@shell32.dll,-25097</sh:keywords>
+         <sh:keywords>lock;unlock</sh:keywords>
+         <sh:keywords>@shell32.dll,-25147</sh:keywords>
+         <sh:keywords>for;asks;make;needs;requirement</sh:keywords>
+         <sh:keywords>@shell32.dll,-25124</sh:keywords>
+         <sh:keywords>@shell32.dll,-25353</sh:keywords>
+         <sh:command>%windir%\system32\rundll32.exe shell32.dll,Control_RunDLL desk.cpl,screensaver,@screensaver</sh:command>
+      </sh:task>
+      <sh:task id="{50d55d1d-6cb6-41d8-891c-0862240a94a0}">
+         <sh:name>Set screen saver password</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25253</sh:keywords>
+         <sh:keywords>@shell32.dll,-25194</sh:keywords>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25147</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25080</sh:keywords>
+         <sh:keywords>@shell32.dll,-25124</sh:keywords>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:command>%windir%\system32\rundll32.exe shell32.dll,Control_RunDLL desk.cpl,screensaver,@screensaver</sh:command>
+      </sh:task>
+      <category id="1">
+         <!-- Change the theme -->
+         <sh:task idref="{565f6260-bbc8-4068-ab61-ad60b4e5498f}" />
+         <!-- Change desktop background -->
+         <sh:task idref="{706674a4-8446-48b9-a3e8-92d189d573ce}" />
+         <!-- Change window colors -->
+         <sh:task idref="{117122a0-5baf-4760-808a-75e6327e35a1}" />
+         <!-- Change system sounds -->
+         <sh:task idref="{1ca3239b-c274-4e11-9359-46322355f0d9}">
+            <sh:name>Change sound effects</sh:name>
+         </sh:task>
+         <!-- Change screen saver -->
+         <sh:task idref="{2b4a4ea6-8957-4554-bc02-441b04701459}" />
+      </category>
+   </application>
+   <!-- Notification Area Icons -->
+   <application id="{8612a23f-e5de-4184-885b-5ec964aa4721}">
+      <sh:task id="{36c9a1e8-6dcd-4256-bae1-609a46098074}">
+         <sh:name>Customize icons on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25071</sh:keywords>
+         <sh:keywords>@shell32.dll,-25085</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25194</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}</sh:command>
+      </sh:task>
+      <sh:task id="{89645a6c-2931-4558-9905-af74396a95ea}">
+         <sh:name>Remove icons from notification area (system tray) on the desktop</sh:name>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25085</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}</sh:command>
+      </sh:task>
+      <sh:task id="{3923ad9f-eecb-4eb8-8d7c-3eb2b5a3dc34}">
+         <sh:name>Show or hide inactive icons on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25154</sh:keywords>
+         <sh:keywords>inactive;disabled;unused;not;used;useless</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}</sh:command>
+      </sh:task>
+      <sh:task id="{fe733861-cc6f-41a5-9a0d-b017212f9441}">
+         <sh:name>Restore default icon behaviors</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25116</sh:keywords>
+         <sh:keywords>@shell32.dll,-25153</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}</sh:command>
+      </sh:task>
+      <sh:task id="{6f5ac063-11a7-4e56-a770-bd490b614c93}">
+         <sh:name>Show or hide the notification area on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25070</sh:keywords>
+         <sh:keywords>@shell32.dll,-25085</sh:keywords>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25099</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25153</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}</sh:command>
+      </sh:task>
+      <sh:task id="{376693ac-526e-4cdb-99e3-1f0a2088508d}">
+         <sh:name>Turn system icons on or off</sh:name>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25099</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \SystemIcons</sh:command>
+      </sh:task>
+      <sh:task id="{9bf5078f-e94f-4ed2-8148-2e9733f5f6ce}">
+         <sh:name>Show or hide volume icon on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25074</sh:keywords>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25090</sh:keywords>
+         <sh:keywords>@shell32.dll,-25091</sh:keywords>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25099</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25173</sh:keywords>
+         <sh:keywords>@shell32.dll,-25387</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \SystemIcons</sh:command>
+      </sh:task>
+      <sh:task id="{a94ce0ee-9fbe-4476-9403-7f5cd7dd7968}">
+         <sh:name>Show or hide battery icon on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25099</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25123</sh:keywords>
+         <sh:keywords>@shell32.dll,-25162</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \SystemIcons</sh:command>
+         <sh:conditions>
+            <sh:condition name="shcond://v1#IsMobilePC" />
+         </sh:conditions>
+      </sh:task>
+      <sh:task id="{44616058-949d-493b-a61e-185148ffa7f6}">
+         <sh:name>Show or hide clock icon on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25066</sh:keywords>
+         <sh:keywords>@shell32.dll,-25067</sh:keywords>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25099</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25129</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \SystemIcons</sh:command>
+      </sh:task>
+      <sh:task id="{4c9d4698-b4d4-4d2e-938e-c74b46bb3802}">
+         <sh:name>Show or hide network icon on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25099</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25138</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \SystemIcons</sh:command>
+      </sh:task>
+      <sh:task id="{700517e5-46b9-4cba-82f3-e6d4c82776c5}">
+         <sh:name>Show or hide action center on the taskbar</sh:name>
+         <sh:keywords>@shell32.dll,-25078</sh:keywords>
+         <sh:keywords>@shell32.dll,-25081</sh:keywords>
+         <sh:keywords>@shell32.dll,-25098</sh:keywords>
+         <sh:keywords>@shell32.dll,-25099</sh:keywords>
+         <sh:keywords>@shell32.dll,-25100</sh:keywords>
+         <sh:keywords>@shell32.dll,-25485</sh:keywords>
+         <sh:keywords>action;center</sh:keywords>
+         <sh:command>explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \SystemIcons</sh:command>
+      </sh:task>
+      <category id="1">
+         <sh:task idref="{36c9a1e8-6dcd-4256-bae1-609a46098074}" />
+         <sh:task idref="{3923ad9f-eecb-4eb8-8d7c-3eb2b5a3dc34}" />
+         <sh:task idref="{376693ac-526e-4cdb-99e3-1f0a2088508d}" />
+      </category>
+   </application>
+   <!-- Devices and Printers -->
+   <application id="{a51c6aa6-020a-40fd-a142-37fe70fea860}">
+        <sh:task id="{DAF32862-EF3D-4D61-AB92-47AEB51DDC80}">
+            <sh:name>@shell32.dll,-24124</sh:name>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:keywords>@shell32.dll,-25138</sh:keywords>
+            <sh:keywords>@shell32.dll,-25139</sh:keywords>
+            <sh:keywords>@shell32.dll,-25145</sh:keywords>
+            <sh:keywords>@shell32.dll,-25162</sh:keywords>
+            <sh:keywords>@shell32.dll,-25173</sh:keywords>
+            <sh:keywords>@shell32.dll,-25176</sh:keywords>
+            <sh:keywords>@shell32.dll,-25205</sh:keywords>
+            <sh:keywords>@shell32.dll,-25251</sh:keywords>
+            <sh:keywords>@shell32.dll,-25252</sh:keywords>
+            <sh:keywords>@shell32.dll,-25308</sh:keywords>
+            <sh:keywords>@shell32.dll,-25319</sh:keywords>
+            <sh:keywords>@shell32.dll,-25338</sh:keywords>
+            <sh:keywords>@shell32.dll,-25375</sh:keywords>
+            <sh:keywords>@shell32.dll,-25383</sh:keywords>
+            <sh:keywords>@shell32.dll,-25400</sh:keywords>
+            <sh:keywords>@shell32.dll,-25401</sh:keywords>
+            <sh2:controlpanel name="Microsoft.DevicesAndPrinters" />
+        </sh:task>
+        <sh:task id="{D3D71B01-F746-499E-A426-FF63FAC98C19}">
+            <sh:name>@shell32.dll,-24125</sh:name>
+            <sh:keywords>@shell32.dll,-25173</sh:keywords>
+            <sh:keywords>@shell32.dll,-25106</sh:keywords>
+            <sh:keywords>@shell32.dll,-25112</sh:keywords>
+            <sh:keywords>@shell32.dll,-25145</sh:keywords>
+            <sh:keywords>@shell32.dll,-25205</sh:keywords>
+            <sh:keywords>@shell32.dll,-25207</sh:keywords>
+            <sh:keywords>@shell32.dll,-25998</sh:keywords>
+            <sh:keywords>@shell32.dll,-25999</sh:keywords>
+            <sh:keywords>@shell32.dll,-26000</sh:keywords>
+            <sh:keywords>@shell32.dll,-26001</sh:keywords>
+            <sh:keywords>@shell32.dll,-26002</sh:keywords>
+            <sh:command>%windir%\system32\DevicePairingWizard.exe</sh:command>
+        </sh:task>
+        <sh:task id="{11E71674-7556-4E27-8D59-03B2FA846204}">
+            <sh:name>@shell32.dll,-24126</sh:name>
+            <sh:keywords>@shell32.dll,-25145</sh:keywords>
+            <sh:keywords>@shell32.dll,-25205</sh:keywords>
+            <sh:keywords>@shell32.dll,-25207</sh:keywords>
+            <sh:keywords>@shell32.dll,-25264</sh:keywords>
+            <sh:keywords>@shell32.dll,-25386</sh:keywords>
+            <sh:keywords>@shell32.dll,-26001</sh:keywords>
+            <sh:keywords>@shell32.dll,-26002</sh:keywords>
+            <sh:command>%windir%\system32\rundll32.exe printui.dll,PrintUIEntryDPIAware /il</sh:command>
+        </sh:task>
+        <sh:task id="{0D2EC3D1-4305-4153-92D1-7E56311B2C00}">
+            <sh:name>@shell32.dll,-24123</sh:name>
+            <sh:keywords>@shell32.dll,-25375</sh:keywords>
+            <sh:keywords>@shell32.dll,-25173</sh:keywords>
+            <sh:keywords>@shell32.dll,-25139</sh:keywords>
+            <sh:keywords>@shell32.dll,-26002</sh:keywords>
+            <sh:keywords>@shell32.dll,-25207</sh:keywords>
+            <sh:command>%windir%\system32\DevicePairingWizard.exe /bluetooth</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegValEquals">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bthserv\Parameters\BluetoothControlPanelTasks" />
+                    <sh:parameter name="Regval" value="State" />
+                    <sh:parameter name="RegvalExpected" value="1" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{C5361E07-6AA3-4453-81BC-93E8F85EABED}" needsElevation="true">
+            <sh:name>@shell32.dll,-24225</sh:name>
+            <sh:keywords>@shell32.dll,-25308</sh:keywords>
+            <sh:keywords>@shell32.dll,-25173</sh:keywords>
+            <sh:keywords>@shell32.dll,-25319</sh:keywords>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:keywords>@shell32.dll,-25176</sh:keywords>
+            <sh:keywords>@shell32.dll,-25391</sh:keywords>
+            <sh2:controlpanel name="Microsoft.DeviceManager" />
+        </sh:task>
+        <sh:task id="{EF8F379B-747B-4C8E-B3D1-4A29E6CF45AE}">
+            <sh:name>@shell32.dll,-24429</sh:name>
+            <sh:command>%windir%\system32\rundll32.exe pwlauncher.dll,ShowPortableWorkspaceLauncherConfigurationUX
+            </sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#IsServer" invert="true" />
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{CF081448-68EC-4969-9F8B-BB23B329B712}">
+            <sh:name>@shell32.dll,-24222</sh:name>
+            <sh:keywords>@shell32.dll,-25067</sh:keywords>
+            <sh:keywords>@shell32.dll,-25116</sh:keywords>
+            <sh:keywords>@shell32.dll,-25264</sh:keywords>
+            <sh:keywords>@shell32.dll,-25386</sh:keywords>
+            <sh:keywords>@shell32.dll,-25145</sh:keywords>
+            <sh2:controlpanel name="Microsoft.DevicesAndPrinters" />
+        </sh:task>
+        <sh:task id="{5DE5B491-2CEA-4AD9-824A-982A22C0B64E}">
+            <sh:name>@shell32.dll,-24239</sh:name>
+            <sh:keywords>@shell32.dll,-25252</sh:keywords>
+            <sh:keywords>@shell32.dll,-25099</sh:keywords>
+            <sh:keywords>@shell32.dll,-25171</sh:keywords>
+            <sh:command>%ProgramFiles%\Windows Photo Viewer\ImagingDevices.exe</sh:command>
+        </sh:task>
+        <sh:task id="{1515BA81-68EB-4143-A29F-51A40A65DAE6}">
+            <sh:name>@shell32.dll,-24122</sh:name>
+            <sh:keywords>@shell32.dll,-25375</sh:keywords>
+            <sh:keywords>@shell32.dll,-25067</sh:keywords>
+            <sh:keywords>@shell32.dll,-25173</sh:keywords>
+            <sh:keywords>@shell32.dll,-25139</sh:keywords>
+            <sh:command>%windir%\system32\rundll32.exe shell32.dll,Control_RunDLL bthprops.cpl,,1</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegValEquals">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bthserv\Parameters\BluetoothControlPanelTasks" />
+                    <sh:parameter name="Regval" value="State" />
+                    <sh:parameter name="RegvalExpected" value="1" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{55E51B6E-7D17-4C80-859E-3007A1F2B6AA}">
+            <sh:name>@shell32.dll,-24237</sh:name>
+            <sh:keywords>@shell32.dll,-25251</sh:keywords>
+            <sh:keywords>@shell32.dll,-25253</sh:keywords>
+            <sh:command>%windir%\system32\wfs.exe</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegKeyExists">
+                    <sh:parameter name="Regkey" value="HKEY_CURRENT_USER\Software\Microsoft\wfs" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{CD2A5953-36A2-427D-B762-3610F37A5D89}">
+            <sh:name>@shell32.dll,-24162</sh:name>
+            <sh:keywords>@shell32.dll,-25067</sh:keywords>
+            <sh:keywords>@shell32.dll,-25259</sh:keywords>
+            <sh:keywords>@shell32.dll,-25173</sh:keywords>
+            <sh:keywords>@shell32.dll,-25261</sh:keywords>
+            <sh:command>%windir%\system32\rundll32.exe shell32.dll,Control_RunDLL %windir%\system32\joy.cpl</sh:command>
+        </sh:task>
+        <sh:task id="{083D5202-600A-4f38-981B-2D138FBDC4D1}">
+            <sh:name>@shell32.dll,-24226</sh:name>
+            <sh:keywords>@shell32.dll,-25487</sh:keywords>
+            <sh:keywords>@shell32.dll,-25485</sh:keywords>
+            <sh:command>%windir%\system32\rundll32.exe newdev.dll,DeviceInternetSettingUi 5</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegValEquals" invert="true">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" />
+                    <sh:parameter name="Regval" value="PROCESSOR_ARCHITECTURE" />
+                    <sh:parameter name="RegvalExpected" value="ARM" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{AAF384A9-978C-41B6-B394-0C40C2EAAA4B}">
+            <sh:name>@shell32.dll,-24352</sh:name>
+            <sh:keywords>@shell32.dll,-25503</sh:keywords>
+            <sh2:controlpanel name="Microsoft.AutoPlay" />
+            <sh:conditions>
+                <sh:condition name="shcond://v1#IsProximityProviderAvailable" />
+            </sh:conditions>
+        </sh:task>
+        <category id="2">
+            <sh:task idref="{D3D71B01-F746-499E-A426-FF63FAC98C19}" />
+            <sh:task idref="{11E71674-7556-4E27-8D59-03B2FA846204}" />
+            <sh:task idref="{4DE175B5-44AB-4397-9E01-38E9DE4F0FB1}">
+                <sh:name>@shell32.dll,-25686</sh:name>
+            </sh:task>
+            <sh:task idref="{C5361E07-6AA3-4453-81BC-93E8F85EABED}" />
+            <sh:task idref="{EF8F379B-747B-4C8E-B3D1-4A29E6CF45AE}" />
+        </category>
+    </application>
+    <!-- Windows Tools -->
+    <application id="{c343705e-4112-46fb-9f75-fa0adff3a1ec}">
+        <sh:task id="{EE423D17-7ED8-4B33-9555-C23DEEAFB4B6}" needsElevation="true">
+            <sh:name>@shell32.dll,-24093</sh:name>
+            <sh:keywords>@shell32.dll,-25202</sh:keywords>
+            <sh:keywords>@shell32.dll,-25253</sh:keywords>
+            <sh:keywords>@shell32.dll,-25201</sh:keywords>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:keywords>@shell32.dll,-25390</sh:keywords>
+            <sh:keywords>@shell32.dll,-25170</sh:keywords>
+            <sh:keywords>@shell32.dll,-25188</sh:keywords>
+            <sh:keywords>@shell32.dll,-25142</sh:keywords>
+            <sh:keywords>@shell32.dll,-25171</sh:keywords>
+            <sh:keywords>@shell32.dll,-25392</sh:keywords>
+            <sh:command>%windir%\system32\mmc.exe %windir%\system32\diskmgmt.msc</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#IsUserAdmin" />
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{7D13A5DB-6081-48BD-8EA3-A9D7FE67A335}">
+            <sh:name>@shell32.dll,-24094</sh:name>
+            <sh:keywords>@shell32.dll,-25202</sh:keywords>
+            <sh:keywords>@shell32.dll,-25204</sh:keywords>
+            <sh:keywords>@shell32.dll,-25201</sh:keywords>
+            <sh:keywords>@shell32.dll,-25188</sh:keywords>
+            <sh:keywords>@shell32.dll,-25203</sh:keywords>
+            <sh:keywords>@shell32.dll,-25171</sh:keywords>
+            <sh:command>%windir%\system32\dfrgui.exe</sh:command>
+        </sh:task>
+        <sh:task id="{9430DB91-B966-4971-A955-E3DBA1F889E7}" needsElevation="true">
+            <sh:name>@shell32.dll,-24095</sh:name>
+            <sh:keywords>@shell32.dll,-25329</sh:keywords>
+            <sh:keywords>@shell32.dll,-25159</sh:keywords>
+            <sh:command>%windir%\system32\mdsched.exe</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegKeyExists">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\MemoryDiagnostic" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{C5AE651D-D027-4D11-8125-595B9933C78B}" needsElevation="true">
+            <sh:name>@shell32.dll,-24096</sh:name>
+            <sh:keywords>@shell32.dll,-25067</sh:keywords>
+            <sh:keywords>@shell32.dll,-25284</sh:keywords>
+            <sh:keywords>@shell32.dll,-25398</sh:keywords>
+            <sh:command>%windir%\system32\mmc.exe %windir%\system32\gpedit.msc</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#SkuEquals" invert="true">
+                    <sh:parameter name="Sku" value="anyhome" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{AACA901F-E74F-4894-B074-F55059532853}">
+            <sh:name>@shell32.dll,-24323</sh:name>
+            <sh:keywords>@shell32.dll,-25202</sh:keywords>
+            <sh:keywords>@shell32.dll,-25143</sh:keywords>
+            <sh:keywords>@shell32.dll,-25188</sh:keywords>
+            <sh:keywords>@shell32.dll,-25081</sh:keywords>
+            <sh:keywords>@shell32.dll,-25126</sh:keywords>
+            <sh:command>%windir%\system32\cleanmgr.exe</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#IsServer" invert="true" />
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{08D48377-1C06-416D-B382-61E8D5F6CD18}" needsElevation="true">
+            <sh:name>@shell32.dll,-24097</sh:name>
+            <sh:keywords>@shell32.dll,-25097</sh:keywords>
+            <sh:keywords>@shell32.dll,-25197</sh:keywords>
+            <sh:keywords>@shell32.dll,-25316</sh:keywords>
+            <sh:keywords>@shell32.dll,-25329</sh:keywords>
+            <sh:command>%windir%\system32\perfmon.exe /report</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#IsServer" />
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{C16A18A2-DC4F-4B7D-92F1-14C430AD17DC}" needsElevation="true">
+            <sh:name>@shell32.dll,-24099</sh:name>
+            <sh:keywords>@shell32.dll,-25254</sh:keywords>
+            <sh:keywords>@shell32.dll,-25255</sh:keywords>
+            <sh:command>%windir%\system32\mmc.exe %windir%\system32\taskschd.msc</sh:command>
+        </sh:task>
+        <sh:task id="{68F4F33C-658C-4278-94C1-22B8E653F3E8}" needsElevation="true">
+            <sh:name>@shell32.dll,-24100</sh:name>
+            <sh:keywords>@shell32.dll,-25190</sh:keywords>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:command>%windir%\system32\odbcad32.exe</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegValEquals">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" />
+                    <sh:parameter name="Regval" value="PROCESSOR_ARCHITECTURE" />
+                    <sh:parameter name="RegvalExpected" value="x86" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{420C524A-2A76-43F7-B1B2-C3CF736557C7}" needsElevation="true">
+            <sh:name>@shell32.dll,-24747</sh:name>
+            <sh:keywords>@shell32.dll,-25190</sh:keywords>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:command>%windir%\syswow64\odbcad32.exe</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegValEquals">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" />
+                    <sh:parameter name="Regval" value="PROCESSOR_ARCHITECTURE" />
+                    <sh:parameter name="RegvalExpected" value="AMD64" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{4BCD16D0-BA72-4F0D-88F9-50D912BFA2B2}" needsElevation="true">
+            <sh:name>@shell32.dll,-24748</sh:name>
+            <sh:keywords>@shell32.dll,-25190</sh:keywords>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:command>%windir%\system32\odbcad32.exe</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegValEquals">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" />
+                    <sh:parameter name="Regval" value="PROCESSOR_ARCHITECTURE" />
+                    <sh:parameter name="RegvalExpected" value="AMD64" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{D5BAC999-E706-4311-9DB0-86E117B1FD25}" needsElevation="true">
+            <sh:name>@shell32.dll,-24100</sh:name>
+            <sh:keywords>@shell32.dll,-25190</sh:keywords>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:command>%windir%\system32\odbcad32.exe</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#RegValEquals">
+                    <sh:parameter name="Regkey"
+                        value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" />
+                    <sh:parameter name="Regval" value="PROCESSOR_ARCHITECTURE" />
+                    <sh:parameter name="RegvalExpected" value="ARM" />
+                </sh:condition>
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{944A41B9-C0FD-41AE-A6DF-5AC4FE5A59B4}" needsElevation="true">
+            <sh:name>@shell32.dll,-24101</sh:name>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:keywords>@shell32.dll,-25173</sh:keywords>
+            <sh:keywords>@shell32.dll,-25399</sh:keywords>
+            <sh:keywords>@shell32.dll,-25400</sh:keywords>
+            <sh:command>%windir%\system32\iscsicpl.exe</sh:command>
+        </sh:task>
+        <sh:task id="{45FDB5DF-1457-4A41-A824-7AD9C75767BC}" needsElevation="true">
+            <sh:name>@shell32.dll,-24102</sh:name>
+            <sh:keywords>@shell32.dll,-25257</sh:keywords>
+            <sh:keywords>@shell32.dll,-25171</sh:keywords>
+            <sh:command>%windir%\system32\mmc.exe %windir%\system32\eventvwr.msc</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#IsServer" invert="true" />
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{6CA1F1CE-1FED-4D96-A82E-08CEDB139AA3}" needsElevation="true">
+            <sh:name>@shell32.dll,-24102</sh:name>
+            <sh:keywords>@shell32.dll,-25257</sh:keywords>
+            <sh:keywords>@shell32.dll,-25171</sh:keywords>
+            <sh:command>%windir%\system32\mmc.exe %windir%\system32\eventvwr.msc</sh:command>
+            <sh:conditions>
+                <sh:condition name="shcond://v1#IsServer" />
+            </sh:conditions>
+        </sh:task>
+        <sh:task id="{6775CCA4-CC42-44F7-800C-4E94FF1EA8C0}" needsElevation="true">
+            <sh:name>@shell32.dll,-24104</sh:name>
+            <sh:keywords>@shell32.dll,-25309</sh:keywords>
+            <sh:keywords>@shell32.dll,-25286</sh:keywords>
+            <sh:keywords>@shell32.dll,-25078</sh:keywords>
+            <sh:command>%windir%\system32\mmc.exe %windir%\system32\services.msc</sh:command>
+        </sh:task>
+        <sh:task id="{693E4EF5-9060-469B-AB2E-948B6B68A883}" needsElevation="true">
+            <sh:name>@shell32.dll,-24433</sh:name>
+            <sh:keywords>@shell32.dll,-25517</sh:keywords>
+            <sh:command>%windir%\system32\mmc.exe %windir%\system32\certlm.msc</sh:command>
+        </sh:task>
+        <category id="5">
+            <sh:task idref="{AACA901F-E74F-4894-B074-F55059532853}">
+                <sh:name>@shell32.dll,-24105</sh:name>
+            </sh:task>
+            <sh:task idref="{7D13A5DB-6081-48BD-8EA3-A9D7FE67A335}" />
+            <sh:task idref="{EE423D17-7ED8-4B33-9555-C23DEEAFB4B6}" />
+            <sh:task idref="{45FDB5DF-1457-4A41-A824-7AD9C75767BC}" />
+            <sh:task idref="{6CA1F1CE-1FED-4D96-A82E-08CEDB139AA3}" />
+            <sh:task idref="{C16A18A2-DC4F-4B7D-92F1-14C430AD17DC}" />
+            <sh:task idref="{08D48377-1C06-416D-B382-61E8D5F6CD18}" />
+        </category>
+    </application>
+</applications>
